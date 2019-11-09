@@ -1,3 +1,135 @@
+/* Универсальные классы и общие правила */
+@font-face {
+  font-family: "Open Sans";
+  src: url(https://github.com/Mistel-77/diploma-html/blob/master/fonts/OpenSans-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(https://github.com/Mistel-77/diploma-html/blob/master/fonts/OpenSans-Bold.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+
 body {
   margin: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ex {
+  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #0c111f;
+}
+
+.header-content, .page, .footer {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* Header */
+.header {
+  position: relative;
+  background-image: url("https://github.com/Mistel-77/diploma-html/blob/master/images/football_767.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #0a0e34;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.9;
+  background-color: #0a0e34;
+}
+
+.header-content { 
+  position: relative;
+  z-index: 2;
+  padding-top: 33px;
+  padding-bottom: 70px;
+}
+
+.header-logo {
+  text-align: center;
+  margin-bottom: 136px;
+}
+
+.header-logo svg {
+  width: 134px;
+  fill: #ffffff;
+}
+
+.header-title, .header-title-explanation {
+  font-size: 28px;
+  line-height: 32px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header-title {
+  margin-bottom: 0;
+}
+
+.header-title-explanation {
+  margin-top: 0;
+  margin-bottom: 90px;
+  margin-left: 28px;
+}
+
+.store {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.store-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 14px;
+  width: 100%;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background-color: #5e42b0;
+  border-radius: 25px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 8px;
+}
+
+.store-button:hover {
+  background-color: #3f2a7e;
+}
+
+.store-button svg {
+  width: 21px;
+  fill: #ffffff;
+}
+
+.store-button  span {
+  font-weight: bold;
+}
+
+/* Основной контент */
+.members {
+  
 }
