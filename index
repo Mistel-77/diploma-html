@@ -3,10 +3,48 @@
 <head>
   <title>Дипломная работа</title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
+  <header class="header">
+  
+</header>
+
+<div class="page">
+  <main class="content">
+    <section class="athlets">
+      
+    </section>
+    
+    <section class="player">
+      
+    </section>
+  </main>
+  
+  <aside class="actions">
+    <article class="be active">
+      
+    </article>
+    
+    <article class="be-active">
+      
+    </article>
+    
+    <article class="find-contact">
+      
+    </article>
+    
+    <section class="work-it">
+      
+    </section>
+  </aside>
+</div>
+
+<footer class="footer">
+  
+</footer>
 
 </body>
 </html>
