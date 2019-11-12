@@ -1,14 +1,14 @@
 /* Универсальные классы и общие правила */
 @font-face {
   font-family: "Open Sans";
-  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
+  src: url(https://mistel-77.github.io/diploma-html/fonts/OpenSans-Regular.woff);
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+  src: url(https://mistel-77.github.io/diploma-html/fonts/OpenSans-Bold.woff);
   font-weight: 700;
   font-style: normal;
 }
@@ -21,22 +21,7 @@ body {
   color: #000000;
 }
 
-ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-ex {
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-color: #0c111f;
-}
-
-.header-content, .members-title, .connection, .collaboration, .growth, .footer {
+.header-content, .members-title, .connection, .collaboration, .growth, .action-text, .footer {
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -44,7 +29,7 @@ ex {
 /* Header */
 .header {
   position: relative;
-  background-image: url("https://raw.githubusercontent.com/Mistel-77/diploma-html/master/images/football_767.jpg");
+  background-image: url("https://mistel-77.github.io/diploma-html/images/football_767.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -71,7 +56,7 @@ ex {
 
 .header-logo {
   text-align: center;
-  margin-bottom: 136px;
+  margin-bottom: 122px;
 }
 
 .header-logo svg {
@@ -80,11 +65,12 @@ ex {
 }
 
 .header-title, .header-title-explanation {
-  font-size: 28px;
-  line-height: 32px;
+  font-size: 8.3vw;
+  line-height: 9.9vw;
   color: #ffffff;
   font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .header-title {
@@ -92,23 +78,24 @@ ex {
 }
 
 .header-title-explanation {
-  margin-top: 0;
-  margin-bottom: 90px;
-  margin-left: 28px;
+  margin-top: 22px;
+  margin-bottom: 86px;
+  margin-left: 42px;
 }
 
 .store {
-  display: flex;
-  flex-wrap: wrap;
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .store-button {
   display: flex;
-  justify-content: center;
   margin-bottom: 14px;
   width: 100%;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   background-color: #5e42b0;
   border-radius: 25px;
   text-transform: uppercase;
@@ -119,6 +106,12 @@ ex {
 
 .store-button:hover {
   background-color: #3f2a7e;
+}
+
+.store-button-content {
+  display: flex;
+  width: 45%;
+  margin: auto;
 }
 
 .store-button svg {
@@ -133,13 +126,14 @@ ex {
 
 /* Основной контент */
 .members {
+  position: relative;
   font-size: 15px;
   line-height: 18px;
 }
 
 .members-title {
-  margin-top: 25px;
-  margin-bottom: 20px;
+  margin-top: 14px;
+  margin-bottom: 234px;
   font-size: 50px;
   line-height: 60px;
   color: #e7e7e7;
@@ -147,8 +141,23 @@ ex {
   text-transform: uppercase;
 }
 
+.member-img {
+  position: absolute;
+}
+
+.athlets .member-img {
+  top: 68px;
+  left: 70px;
+}
+
+.player .member-img {
+  top: 68px;
+  left: 10px;
+}
+
 .connection, .collaboration, .growth {
-  padding-bottom: 55px;
+  padding-bottom: 40px;
+  letter-spacing: 1px;
 }
 
 .connection {
@@ -158,6 +167,7 @@ ex {
 
 .collaboration {
   padding-top: 58px;
+  padding-bottom: 37px;
   background: #f5f4f9;
 }
 
@@ -173,14 +183,14 @@ ex {
 
 .members-block-title {
   display: flex;
-  margin-bottom: 23px;
+  margin-bottom: 15px;
   font-weight: bold;
 }
 
 .members-block-number {
   margin-right: 8px;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 18px;
   color: #000000;
 }
 
@@ -209,4 +219,526 @@ ex {
   font-size: 23px;
   text-transform: uppercase;
   line-height: 25px;
+  letter-spacing: 1px;
+}
+
+/*aside*/
+.action {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.action-img {
+  height: 350px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #cde8fd;
+}
+
+.be-active .action-img {
+  background-image: url("https://mistel-77.github.io/diploma-html/images/be-active_640.jpg");
+}
+
+.find-contact .action-img {
+  background-image: url("https://mistel-77.github.io/diploma-html/images/find-contact_640.jpg");
+}
+
+.work-it .action-img {
+  background-image: url("https://mistel-77.github.io/diploma-html/images/work-it_640.jpg");
+}
+
+.action-text {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 57px;
+}
+
+.action-number {
+  position: absolute;
+  top: -57px;
+  left: 20px;
+  padding: 20px 26px;
+  background-color: #5e42b0;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.action-number::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin: 0 auto 6px;
+  background-color: #8f7bc8;
+  border-radius: 2px;
+}
+
+.action-title {
+  margin-top: 0;
+  margin-bottom: 17px;
+  color: #e7e7e7;
+  font-size: 28px;
+  text-transform: uppercase;
+  line-height: 35px;
+  letter-spacing: 1px;
+}
+
+/* footer */
+.footer {
+  position: relative;
+  background-image: url("https://mistel-77.github.io/diploma-html/images/game_767.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #0a0e34;
+}
+
+.footer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.9;
+  background-color: #0a0e34;
+}
+
+.footer-content { 
+  position: relative;
+  z-index: 2;
+  padding-top: 98px;
+  padding-bottom: 10px;
+}
+
+.footer-logo, .footer-logo-text {
+  text-align: center;
+}
+
+.footer-logo svg, .footer-logo-text svg {
+  fill: #ffffff;
+}
+
+.footer-logo svg {
+  width: 53px;
+}
+
+.footer-logo-text svg {
+  width: 134px;
+}
+
+.footer-logo a {
+  display: flex;
+  justify-content: center;
+  width: 73px;
+  height: 73px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 18px;
+  background: linear-gradient(#7756d7, #50379a);
+}
+
+.footer-text {
+  padding-top: 52px;
+}
+
+.footer-title {
+  margin-bottom: 70px;
+  font-size: 14px;
+  color: #9b8ec1;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footer-title h2 {
+  margin-top: 0;
+  margin-bottom: 11px;
+  font-size: 32px;
+  line-height: 35px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-title p {
+  margin-top: 0;
+}
+
+/*media*/
+
+@media (min-width: 641px) {
+  .header-logo svg {
+    width: 205px;
+  }
+  
+  .store {
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+  }
+  
+  .store-button {
+    width: 314px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-radius: 40px;
+    font-size: 14px;
+  }
+  
+  .app-store {
+    margin-right: 36px;
+  }
+  
+  .store-button-content {
+    width: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0;
+  }
+  
+  .store-button svg {
+    width: 40px;
+    marfin-right: 30px;
+  }
+  
+  .connection {
+    background: none;
+  }
+  
+  .members-title {
+    margin-bottom: 0;
+    font-size: 80px;
+  }
+  
+  .members-block-number {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  
+  .action-number {
+    top: -80px;
+    left: 32px;
+    padding: 36px 44px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  
+  .action {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  
+  .action-title, .footer-title h2 {
+    font-size: 80px;
+    line-height: 60px;
+  }
+  
+  .action-title {
+    margin-top: 60px;
+    margin-bottom: 37px;
+  }
+  
+  .footer-logo a {
+    width: 127px;
+    height: 127px;
+  }
+  
+  .footer-logo svg {
+    width: 90px;
+  }
+  
+  .footer-content {
+    padding-top: 125px;
+  }
+  
+  .footer-title {
+    font-size: 36px;
+    line-heigth: 60px;
+  }
+  
+  .footer-title h2 {
+    margin-bottom: 20px;
+  }
+  
+  .footer-text {
+    padding-top: 90px;
+  }
+  
+  .footer-logo-text {
+    margin-top: 50px;
+  }
+  
+  .footer-logo-text svg {
+    width: 200px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  
+  .header {
+    background-image: url("https://mistel-77.github.io/diploma-html/images/football_1280.jpg");
+  }
+  
+  .header-logo {
+    margin-bottom: 160px;
+  }
+  
+  .header-title {
+    margin-left: 50px;
+  }
+  
+  .header-title-explanation {
+    margin-top: 2px;
+    margin-left: 160px;
+  }
+  
+  .header-content {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+  
+  .store {
+    margin-top: 275px;
+  }
+  
+  .header-content, .members-title, .connection, .action-text, .footer, .player .growth, .player .collaboration {
+    padding-left: 32px;
+  }
+  
+  header-content, .members-title, .connection, .collaboration, .growth, .action-text, .footer {
+    padding-right: 32px;
+  }
+  
+ .athlets .members-title, .athlets .connection {
+    margin-left: 34%;
+  }
+  
+  .athlets .growth, .athlets .collaboration {
+    padding-left: calc(34% + 32px);
+  }
+  
+  .player .members-title, .player .connection {
+    margin-right: 34%;
+  }
+  
+  .player .growth, .player .collaboration {
+    padding-right: calc(34% + 32px);
+  }
+  
+  .athlets .member-img {
+    top: 80px;
+    left: -160px;
+  }
+  
+  .player .member-img {
+    top: 35px;
+    left: auto;
+    right: -20px;
+  }
+  
+  .members {
+    padding-top: 70px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  
+  .members-block-title h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .connection {
+    padding-top: 60px;
+    padding-bottom: 15px;
+  }
+  
+  .collaboration, .growth {
+    padding-top: 35px;
+    padding-bottom: 17px;
+  }
+  
+  .action-img {
+    height: 580px;
+  }
+
+  .be-active .action-img {
+    background-image: url("https://mistel-77.github.io/diploma-html/images/be-active.jpg");
+  }
+
+  .find-contact .action-img {
+    background-image: url("https://mistel-77.github.io/diploma-html/images/find-contact.jpg");
+  }
+
+  .work-it .action-img {
+    background-image: url("https://mistel-77.github.io/diploma-html/images/work-it.jpg");
+  }
+  
+  .action-text {
+    padding-bottom: 72px;
+  }
+  
+  .footer {
+    background-image: url("https://mistel-77.github.io/diploma-html/images/game_1280.jpg");
+  }
+}
+
+@media (min-width: 961px) {
+  
+  .header {
+    background-image: url("https://mistel-77.github.io/diploma-html/images/football_1920.jpg");
+  }
+  
+  .header-title, .header-title-explanation {
+    font-size: 90px;
+    line-height: 70px;
+  }
+  
+  .header-logo {
+    margin-top: 10px;
+    margin-bottom: 280px;
+  }
+  
+  .header-title {
+    margin-left: 100px;
+  }
+  .header-title-explanation {
+    text-align: right;
+    margin-right: 100px;
+  }
+  
+  .store {
+    margin-top: 230px;
+  }
+  
+  .header-content {
+    padding-bottom: 95px;
+  }
+  
+    .header-content, .footer, .player .growth, .player .collaboration, .player .members-title, .player .connection {
+    padding-left: 65px;
+  }
+  
+  header-content, .collaboration, .growth, .footer {
+    padding-right: 65px;
+  }
+  
+ .athlets .members-title, .athlets .connection {
+    margin-left: 50%;
+  }
+  
+  .athlets .growth, .athlets .collaboration {
+    padding-left: 50%;
+  }
+  
+  .player .members-title, .player .connection {
+    margin-right: 50%;
+  }
+  
+  .player .growth, .player .collaboration {
+    padding-right: 50%;
+  }
+  
+  .athlets .member-img {
+    top: 40px;
+    left: 100px;
+  }
+  
+  .player .member-img {
+    top: 35px;
+    left: auto;
+    right: -70px;
+  }
+  
+  .members-title, .connection {
+    padding-left: 0;
+  }
+  
+  .members {
+    padding-top: 100px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+  .members-block-title h3 {
+    font-size: 36px;
+  }
+  
+  .members {
+    font-size: 20px;
+  }
+  
+  .members-block-title h3 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .connection {
+    padding-top: 110px;
+    padding-bottom: 30px;
+  }
+  
+  .action {
+    display: flex;
+    align-items: center;
+  }
+  
+  .action-img {
+    width: 50%;
+    flex-shrink: 0;
+    height: 730px;
+  }
+  
+  .be-active .action-img {
+    background-image: url("https://mistel-77.github.io/diploma-html/images/be-active_1024.jpg");
+  }
+
+  .find-contact .action-img {
+    background-image: url("https://mistel-77.github.io/diploma-html/images/find-contact_1024.jpg");
+    order: 2;
+  }
+
+  .work-it .action-img {
+    background-image: url("https://mistel-77.github.io/diploma-html/images/work-it_1024.jpg");
+  }
+  
+  .action-text {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  
+  .action-number {
+    padding: 40px 50px;
+    left: -60px;
+    top: 50px;
+  }
+  
+  .find-contact .action-number {
+    left: auto;
+    right: -60px;
+  }
+  
+  .actions {
+    margin-bottom: 5px;
+  }
+  
+  .footer-content {
+    padding-bottom: 50px;
+  }
+  
+  .footer-content-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-text {
+    margin-left: 40px;
+  }
+  
+  .footer {
+    background-image: url("https://mistel-77.github.io/diploma-html/images/game_1920.jpg");
+  }
 }
