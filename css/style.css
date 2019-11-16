@@ -64,7 +64,7 @@ body {
   fill: #ffffff;
 }
 
-.header-title, .header-title-explanation {
+.header-title {
   font-size: 8.3vw;
   line-height: 9.9vw;
   color: #ffffff;
@@ -73,14 +73,15 @@ body {
   letter-spacing: 1px;
 }
 
-.header-title {
-  margin-bottom: 0;
-}
-
 .header-title-explanation {
+  display: block;
   margin-top: 22px;
   margin-bottom: 86px;
   margin-left: 42px;
+}
+
+.header-title {
+  margin-bottom: 0;
 }
 
 .store {
@@ -110,7 +111,7 @@ body {
 
 .store-button-content {
   display: flex;
-  width: 45%;
+  /*width: 45%;*/
   margin: auto;
 }
 
@@ -124,16 +125,20 @@ body {
   font-weight: bold;
 }
 
+.google-play .store-button-content {
+  padding-right: 20px;
+}
+
 /* Основной контент */
 .members {
   position: relative;
   font-size: 15px;
   line-height: 18px;
+  overflow-x: hidden;
 }
 
 .members-title {
   margin-top: 14px;
-  margin-bottom: 234px;
   font-size: 50px;
   line-height: 60px;
   color: #e7e7e7;
@@ -142,17 +147,9 @@ body {
 }
 
 .member-img {
-  position: absolute;
-}
-
-.athlets .member-img {
-  top: 68px;
-  left: 70px;
-}
-
-.player .member-img {
-  top: 68px;
-  left: 10px;
+  position: relative;
+  z-index: 5;
+  text-align: center;
 }
 
 .connection, .collaboration, .growth {
@@ -161,6 +158,8 @@ body {
 }
 
 .connection {
+  position: relative;
+  top: -50px;
   padding-top: 80px;
   background: #fafafa;
 }
@@ -245,7 +244,9 @@ body {
 }
 
 .work-it .action-img {
-  background-image: url("https://mistel-77.github.io/diploma-html/images/work-it_640.jpg");
+  /*background-image: url("https://mistel-77.github.io/diploma-html/images/work-it_640.jpg");*/
+  overflow: hidden;
+  background-color: inherit;
 }
 
 .action-text {
@@ -367,6 +368,11 @@ body {
   margin-top: 0;
 }
 
+@media (max-width: 640px) {
+  .google-play .store-button-content {
+    padding-right: 20px;
+  }
+}
 /*media*/
 
 @media (min-width: 641px) {
@@ -393,10 +399,10 @@ body {
   }
   
   .store-button-content {
-    width: auto;
+   /* width: auto;
     padding-left: 40px;
     padding-right: 40px;
-    margin: 0;
+    margin: 0;*/
   }
   
   .store-button svg {
@@ -406,6 +412,20 @@ body {
   
   .connection {
     background: none;
+  }
+  
+  .member-img {
+    position: absolute;
+  }
+  
+  .athlets .member-img {
+    top: 68px;
+    left: 70px;
+  }
+
+  .player .member-img {
+    top: 68px;
+    left: 10px;
   }
   
   .members-title {
@@ -563,7 +583,7 @@ body {
   .action-img {
     height: 580px;
   }
-
+  
   .be-active .action-img {
     background-image: url("https://mistel-77.github.io/diploma-html/images/be-active.jpg");
   }
@@ -572,9 +592,9 @@ body {
     background-image: url("https://mistel-77.github.io/diploma-html/images/find-contact.jpg");
   }
 
-  .work-it .action-img {
+ /* .work-it .action-img {
     background-image: url("https://mistel-77.github.io/diploma-html/images/work-it.jpg");
-  }
+  }*/
   
   .action-text {
     padding-bottom: 72px;
@@ -696,15 +716,17 @@ body {
   }
 
   .find-contact .action-img {
-    background-image: url("https://mistel-77.github.io/diploma-html/images/find-contact_1024.jpg");
     order: 2;
+    background-image: url("https://mistel-77.github.io/diploma-html/images/find-contact_1024.jpg");
   }
 
-  .work-it .action-img {
+ /* .work-it .action-img {
     background-image: url("https://mistel-77.github.io/diploma-html/images/work-it_1024.jpg");
-  }
+  }*/
   
   .action-text {
+    box-sizing: border-box;
+    width: 50%;
     padding-left: 100px;
     padding-right: 100px;
   }
