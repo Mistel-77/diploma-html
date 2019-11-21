@@ -750,3 +750,9 @@ body {
     background-image: url("../images/game_1920.jpg");
   }
 }
+
+@media (min-width: 961px) and (max-width: 1100px) {
+  .player .member-img {
+    width: 700px;
+  }
+}
