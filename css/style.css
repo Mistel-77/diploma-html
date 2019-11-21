@@ -343,9 +343,6 @@ body {
 
 .footer-text {
   padding-top: 52px;
-}
-
-.footer-title {
   margin-bottom: 70px;
   font-size: 14px;
   color: #9b8ec1;
@@ -353,7 +350,7 @@ body {
   text-align: center;
 }
 
-.footer-title h2 {
+.footer-text h2 {
   margin-top: 0;
   margin-bottom: 11px;
   font-size: 32px;
@@ -364,7 +361,7 @@ body {
   letter-spacing: 1px;
 }
 
-.footer-title p {
+.footer-text p {
   margin-top: 0;
 }
 
@@ -451,7 +448,7 @@ body {
     line-height: 28px;
   }
   
-  .action-title, .footer-title h2 {
+  .action-title, .footer-text h2 {
     font-size: 80px;
     line-height: 80px;
   }
@@ -474,17 +471,14 @@ body {
     padding-top: 125px;
   }
   
-  .footer-title {
+  .footer-text {
+    padding-top: 90px;
     font-size: 36px;
     line-heigth: 60px;
   }
   
-  .footer-title h2 {
+  .footer-text h2 {
     margin-bottom: 20px;
-  }
-  
-  .footer-text {
-    padding-top: 90px;
   }
   
   .footer-logo-text {
@@ -637,7 +631,7 @@ body {
     padding-bottom: 95px;
   }
   
-    .header-content, .footer, .player .growth, .player .collaboration, .player .members-title, .player .connection {
+  .header-content, .footer, .player .growth, .player .collaboration, .player .members-title, .player .connection {
     padding-left: 65px;
   }
   
