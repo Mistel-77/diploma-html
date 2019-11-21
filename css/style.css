@@ -1,14 +1,14 @@
 /* Универсальные классы и общие правила */
 @font-face {
   font-family: "Open Sans";
-  src: url(https://mistel-77.github.io/diploma-html/fonts/OpenSans-Regular.woff);
+  src: url(../fonts/OpenSans-Regular.woff);
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url(https://mistel-77.github.io/diploma-html/fonts/OpenSans-Bold.woff);
+  src: url(../fonts/OpenSans-Bold.woff);
   font-weight: 700;
   font-style: normal;
 }
@@ -29,7 +29,7 @@ body {
 /* Header */
 .header {
   position: relative;
-  background-image: url("https://mistel-77.github.io/diploma-html/images/football_767.jpg");
+  background-image: url("../images/football_767.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -236,15 +236,15 @@ body {
 }
 
 .be-active .action-img {
-  background-image: url("https://mistel-77.github.io/diploma-html/images/be-active_640.jpg");
+  background-image: url("../images/be-active_640.jpg");
 }
 
 .find-contact .action-img {
-  background-image: url("https://mistel-77.github.io/diploma-html/images/find-contact_640.jpg");
+  background-image: url("../images/find-contact_640.jpg");
 }
 
 .work-it .action-img {
-  background-image: url("https://mistel-77.github.io/diploma-html/images/work-it_640.jpg");
+  background-image: url("../images/work-it_640.jpg");
   overflow: hidden;
   background-color: inherit;
 }
@@ -289,7 +289,7 @@ body {
 /* footer */
 .footer {
   position: relative;
-  background-image: url("https://mistel-77.github.io/diploma-html/images/game_767.jpg");
+  background-image: url("../images/game_767.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -499,7 +499,7 @@ body {
 @media (min-width: 641px) and (max-width: 960px) {
   
   .header {
-    background-image: url("https://mistel-77.github.io/diploma-html/images/football_1280.jpg");
+    background-image: url("../images/football_1280.jpg");
   }
   
   .header-logo {
@@ -585,15 +585,15 @@ body {
   }
   
   .be-active .action-img {
-    background-image: url("https://mistel-77.github.io/diploma-html/images/be-active.jpg");
+    background-image: url("../images/be-active.jpg");
   }
 
   .find-contact .action-img {
-    background-image: url("https://mistel-77.github.io/diploma-html/images/find-contact.jpg");
+    background-image: url("../images/find-contact.jpg");
   }
 
   .work-it .action-img {
-    background-image: url("https://mistel-77.github.io/diploma-html/images/work-it.jpg");
+    background-image: url("../images/work-it.jpg");
   }
   
   .action-text {
@@ -601,14 +601,14 @@ body {
   }
   
   .footer {
-    background-image: url("https://mistel-77.github.io/diploma-html/images/game_1280.jpg");
+    background-image: url("../images/game_1280.jpg");
   }
 }
 
 @media (min-width: 961px) {
   
   .header {
-    background-image: url("https://mistel-77.github.io/diploma-html/images/football_1920.jpg");
+    background-image: url("../images/football_1920.jpg");
   }
   
   .header-title, .header-title-explanation {
@@ -712,16 +712,16 @@ body {
   }
   
   .be-active .action-img {
-    background-image: url("https://mistel-77.github.io/diploma-html/images/be-active_1024.jpg");
+    background-image: url("../images/be-active_1024.jpg");
   }
 
   .find-contact .action-img {
     order: 2;
-    background-image: url("https://mistel-77.github.io/diploma-html/images/find-contact_1024.jpg");
+    background-image: url("../images/find-contact_1024.jpg");
   }
 
   .work-it .action-img {
-    background-image: url("https://mistel-77.github.io/diploma-html/images/work-it_1024.jpg");
+    background-image: url("../images/work-it_1024.jpg");
   }
   
   .action-text {
@@ -761,6 +761,6 @@ body {
   }
   
   .footer {
-    background-image: url("https://mistel-77.github.io/diploma-html/images/game_1920.jpg");
+    background-image: url("../images/game_1920.jpg");
   }
 }
