@@ -330,7 +330,7 @@ body {
   width: 134px;
 }
 
-.footer-logo a {
+.footer-logo .footer-logo-box {
   display: flex;
   justify-content: center;
   width: 73px;
@@ -461,7 +461,7 @@ body {
     margin-bottom: 37px;
   }
   
-  .footer-logo a {
+  .footer-logo .footer-logo-box {
     width: 127px;
     height: 127px;
   }
